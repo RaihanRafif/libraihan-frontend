@@ -1,0 +1,34 @@
+/* styles/Signup.module.css */
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container [type='email'],
+.container input[type='text'],
+.container input[type='tel'],
+.container input[type='password'],
+.container input[type='file'],
+.container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+}
