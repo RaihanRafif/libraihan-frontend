@@ -1,0 +1,120 @@
+:root {
+    --background-color: #C2CDC1;
+    --text-color: #333333;
+    --accent-color-1: #AACCFF;
+    --accent-color-2: #FFFFE0;
+    /* Optional */
+}
+
+/* FADE ANIMATIONS */
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 400ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 400ms;
+}
+
+/* SIDEBAR */
+
+.sidebar_button {
+    background: transparent;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+}
+
+.sidebar_button.rotate {
+    transform: rotate(180deg);
+}
+
+.sidebar {
+    height: 100vh;
+    min-width: 200px;
+    background: var(--background-color);
+    padding: 20px;
+    color: var(--text-color);
+    transition: 0.4s ease-in;
+}
+
+.sidebar-closed {
+    min-width: 40px;
+}
+
+.profile_section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.profile_picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: whitesmoke;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid black;
+    padding: 2px;
+}
+
+.profile_picture img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar_listItem {
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.sidebar_divItem {
+    display: flex;
+    align-items: center;
+    color: black;
+
+    text-decoration: none;
+}
+
+.sidebar_listItem:hover {
+    border: 2px solid var(--accent-color-2);
+    cursor: pointer;
+}
+
+.sidebar_listItem p {
+    white-space: nowrap;
+}
+
+.sidebar_icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 15px 0 0;
+}
+
+.active {
+    border: 2px solid var(--accent-color-2);
+}
